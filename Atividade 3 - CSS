@@ -1,0 +1,31 @@
+.h2{
+    color: darkgray;
+}
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 50%;
+}
+  
+td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+}
+
+.th2 {
+    background-color: red;
+    color: white;
+}
+  
+tr:nth-child(even){
+    background-color: #dddddd;
+}
+
+.footer {
+    margin-left: 35%;
+}
+
+.footer2 {
+    margin-left: 30%;
+}
