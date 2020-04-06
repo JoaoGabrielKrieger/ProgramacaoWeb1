@@ -7,9 +7,10 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div align="center">
-    <h1>Coronavírus do Brasil</h1>
-    <h2 class="h2">Ministério da saúde confirma 76 casos</h2>
+    <header>
+        <h1>Coronavírus do Brasil</h1>
+        <h2 class="h2">Ministério da saúde confirma 76 casos</h2>
+    </header>
     <table>
         <tr>
             <th></th>
@@ -163,9 +164,9 @@
         </tr>
     </table>
     <footer>
-        <p class="footer"><strong>Fonte:</strong> Ministério da saúde</p>
-        <p class="footer2"><strong>Infográfico elaborado em:</strong> 12/03/2020</p>
+        <p><strong>Fonte:</strong> Ministério da saúde</p>
+        <hr>
+        <p><strong>Infográfico elaborado em:</strong> 12/03/2020</p>
     </footer>
-    </div>
 </body>
 </html>
