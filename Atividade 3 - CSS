@@ -1,12 +1,16 @@
+body{
+    margin-left: 30%;
+    margin-right: 30%;
+}
 .h2{
     color: darkgray;
 }
 table {
     font-family: arial, sans-serif;
     border-collapse: collapse;
-    width: 50%;
+    width: 100%;
 }
-  
+
 td, th {
     border: 1px solid #dddddd;
     text-align: left;
@@ -22,10 +26,12 @@ tr:nth-child(even){
     background-color: #dddddd;
 }
 
-.footer {
-    margin-left: 35%;
+footer{
+    text-align: right;
+    color: gray;
+    font-size: medium;
 }
 
-.footer2 {
-    margin-left: 30%;
+header{
+    text-align: left;
 }
