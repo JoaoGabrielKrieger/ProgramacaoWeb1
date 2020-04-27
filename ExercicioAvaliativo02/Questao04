@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <div>
+        <h1 class="filme"> Lista de filmes </h1>
+    </div>
+
+    <script language="JavaScript" src="app.js"></script>
+
+</body>
+
+</html>
+
+===============================================
+
+h1 {
+    color: red;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 16px;
+}
+
+h1.filme {
+    color: black;
+    font-size: 30px;
+}
+
+h2 {
+    color: blue;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 16px;
+}
+
+h3 {
+    color: green;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 16px;
+}
+
+==============================================
+
+class Filme {
+    constructor(titulo, ano, genero) {
+        this.titulo = titulo;
+        this.ano = ano;
+        this.genero = genero
+    }
+
+    get Titulo() {
+        return this.titulo;
+    }
+    get Ano() {
+        return this.ano;
+    }
+    get Genero() {
+        return this.genero;
+    }
+    set Titulo(titulo) {
+        this.titulo = titulo;
+    }
+    set Ano(ano) {
+        this.ano = ano;
+    }
+    set Genero(genero) {
+        this.genero = genero;
+    }
+}
+
+function name1() {
+    var myFilme = new Filme("filme inventado01", 2030, "policial");
+    document.write("<h1>Título: " + myFilme.Titulo + "</h1>" + "<br>")
+    document.write("<h1>Ano: " + myFilme.Ano + "</h1>" + "<br>")
+    document.write("<h1>Genêro: " + myFilme.Genero + "</h1>" + "<br>")
+}
+name1();
+
+function name2() {
+    var myFilme = new Filme("filme inventado02", 2012, "Comédia");
+    document.write("<h2>Título: " + myFilme.Titulo + "</h2>" + "<br>")
+    document.write("<h2>Ano: " + myFilme.Ano + "</h2>" + "<br>")
+    document.write("<h2>Genêro: " + myFilme.Genero + "</h2>" + "<br>")
+}
+name2();
+
+function name3() {
+    var myFilme = new Filme("filme inventado03", 2015, "Terror");
+    document.write("<h3>Título: " + myFilme.Titulo + "</h3>" + "<br>")
+    document.write("<h3>Ano: " + myFilme.Ano + "</h3>" + "<br>")
+    document.write("<h3>Genêro: " + myFilme.Genero + "</h3>" + "<br>")
+}
+name3();
