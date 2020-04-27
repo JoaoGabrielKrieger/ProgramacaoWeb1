@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=], initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="style.css" rel="stylesheet">
+
+    <title>Document</title>
+</head>
+
+<body>
+
+    </style>
+
+    <table border="20" cellspacing=10 cellpadding=10 bordercolor="white">
+        <tr>
+            <th id="01">Apresentação 1</th>
+            <th id="02">Apresentação 2</th>
+            <th id="03">Apresentação 3</th>
+        </tr>
+        <td ><img src="1.jpg"></td>
+        <td><img src="2.jpg"></td>
+        <td><img src="3.jpg"></td>
+        </td>
+    </table>
+
+</body>
+
+</html>
+
+=============================
+
+
+table {
+    text-align: center;
+}
+table tr th {
+    border-color: black;
+}
+table td:hover {
+    border-color:black;
+}
