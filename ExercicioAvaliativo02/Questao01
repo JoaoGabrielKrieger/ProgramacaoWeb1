@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="Style.css">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <nav id="menu">
+        <ul>
+            <li>Institucional
+                <ul>
+                    <li>Estruturua</li>
+                    <li>Localização</li>
+                </ul>
+            </li>
+            <li>Produtos
+                <ul>
+                    <li>Notebooks</li>
+                    <li>Celulares</li>
+                    <li>Eletrodomésticos</li>
+                </ul>
+            </li>
+            <li>Sobre
+                <ul>
+                    <li>Contatos</li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
+</body>
+
+</html>
+
+
+==========================================================
+
+#menu ul li {
+    display: inline-block;
+    background-color: lightgrey;
+    color: black;
+    width: 200px;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+    font-size: 25px;
+}
+
+#menu ul li:hover ul {
+    visibility: visible;
+}
+
+#menu ul li:hover {
+    background-color: darkgray;
+}
+
+#menu ul ul {
+    visibility: hidden;
+    position: absolute;
+    width: 20px;
+    text-align: center;
+}
