@@ -1,0 +1,47 @@
+  
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <div>
+        <p id="titulo">Lista</p>
+        <ul>
+            <p id="imprimir"></p>
+        </ul>
+    </div>
+
+    <script language="JavaScript" src="app.js"></script>
+
+</body>
+
+</html>
+
+=============================================
+
+ul {
+    font-family: Arial;
+    font-size: 16px;
+    color: black;
+
+}
+
+#titulo {
+    font-weight: bold;
+}
+
+==============================================
+
+const lista = ["Google", 5222, 227, 222, "João", 3000, "Firefox"];
+lista.forEach(criarLista);
+
+function criarLista(item) {
+    document.getElementById("imprimir").innerHTML += item + "<br>";
+}
