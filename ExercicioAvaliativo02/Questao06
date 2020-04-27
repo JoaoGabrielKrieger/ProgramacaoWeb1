@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <title>Document</title>
+
+    <script>
+        function calculoFatorial(numero) {
+
+            if (numero > 0) {
+                var valor = numero;
+                var resultado = 0;
+                var guarda = valor;
+                while (valor != 1) {
+                    resultado = (guarda * (valor - 1));
+                    guarda = resultado;
+                    valor--;
+                }
+                alert(resultado);
+            } else {
+                alert("Valor inválido");
+            }
+        }
+    </script>
+</head>
+
+<body>
+
+    <form>
+        <input type="text" id="entrada" placeholder="Valor">
+        <button type="button" onclick="calculoFatorial(entrada.value)" class="btn btn-dark">Fatorial</button>
+    </form>
+
+</body>
+
+</html>
+
+=================================================
+
+button {
+    border: none;
+    color: gainsboro;
+    background: rgb(155, 8, 8);
+    padding: 10px 14px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 5px;
+}
+
+button:hover {
+    background-color: rgb(110, 12, 12);
+    color: white;
+}
+
+h1 {
+    text-align: center;
+    color: rgb(78, 3, 13);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin-top: 15%;
+}
+
+input {
+    text-align: center;
+    background: #259696ea;
+    padding: 10px 5px;
+    border: none;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+form {
+    margin-top: 100px;
+}
