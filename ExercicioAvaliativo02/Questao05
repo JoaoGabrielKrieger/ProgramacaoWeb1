@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="style.css" rel="stylesheet">
+    <title>Document</title>
+
+</head>
+
+<body>
+    <script language="JavaScript" src="app.js"></script>
+    <main>
+        <div class="flex-container">
+            <div>
+                <label for="">valor 01</label>
+                <br>
+                <input type="text" id="campo01">
+            </div>
+            <div>
+                <label for="">valor 02</label>
+                <br>
+                <input type="text" id="campo02">
+            </div>
+            <div>
+                <label for="">valor 03</label>
+                <br>
+                <input type="text" id="campo03">
+            </div>
+            <div>
+                <input type="submit" id="btn01" value="Calcular" onclick="resolve(campo01.value,campo02.value,campo03.value)">
+            </div>
+        </div>
+
+    </main>
+
+</body>
+
+</html>
+
+=======================================
+
+   .flex-container {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .flex-container > div {
+    width: 150px;
+    margin: 100px;
+    text-align: center;
+    font-size: 20px;
+  }
+
+  body {
+    background-color: rgba(81, 170, 115, 0.815);
+  }
+
+#btn01 {
+
+  color: white;
+  border: none;
+  background-color: rgb(30, 32, 32);
+  font-size: 50px;
+}
+
+#btn01:hover {
+  background-color: rgb(2, 13, 17);
+}
+
+#campo01 {
+  border-color: 10px;
+  border-color: rgb(150, 142, 142);
+  background-color: rgb(212, 193, 193)
+}
+
+#campo02 {
+  border-color: 10px;
+  border-color: rgb(150, 142, 142);
+  background-color: rgb(212, 193, 193)
+}
+#campo03 {
+  border-color: 10px;
+  border-color: rgb(150, 142, 142);
+  background-color: rgb(212, 193, 193)
+}
+
+label {
+  color: rgb(8, 18, 27);
+}
+
+=====================================================
+
+function resolve(n1, n2, n3) {
+    var valor;
+
+    valor = (parseFloat(n1) + parseFloat(n2) + parseFloat(n3));
+
+    if (valor % 2 == 0) {
+
+        alert("Numero informado é par")
+
+    } else {
+
+        alert("Numero informado é Impar")
+    }
+
+}
